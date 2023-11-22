@@ -1,190 +1,319 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import '../assets/styles/base.css';
+import "../assets/styles/base.css";
 ---
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFTA-Metro Paratransit Study</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
     <header class="bg-white shadow">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-gray-800">NFTA-Metro</a>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Upcoming Meetings</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Project Documents</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
-            </div>
-        </nav>
+      <nav
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-gray-800">NFTA-Metro</a>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800"
+            >Upcoming Meetings</a
+          >
+          <a href="#" class="text-gray-600 hover:text-gray-800"
+            >Project Documents</a
+          >
+          <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="bg-blue-900">
-            <div class="container mx-auto px-6 py-12 text-white">
-                <h1 class="text-3xl font-bold mb-2">NFTA-Metro Paratransit Study</h1>
-                <p class="mb-4">Upcoming Meetings</p>
+      <section class="bg-blue-900">
+        <div class="container mx-auto px-6 py-12 text-white">
+          <h1>NFTA-Metro Paratransit Study</h1>
+          <p class="mb-4">Upcoming Meetings</p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-6 py-12">
+        <p>
+          NFTA-Metro is undertaking a study to comprehensively evaluate its
+          Paratransit Access Line (PAL) service.
+        </p>
+        <p class="text-gray-600 mb-4">
+          The study will identify opportunities to improve service, customer
+          experience, and outcomes by the way the service is delivered, the
+          availability of paratransit service, and the customer experience with
+          core operations.
+        </p>
+        <p class="text-gray-600 mb-4">
+          To inform this effort, NFTA-Metro is reaching out to PAL customers and
+          stakeholders within the service area and those with a stake in and
+          insights about PAL service and usage outcomes.
+        </p>
+        <p class="text-gray-600 mb-4">
+          The NFTA-Metro Paratransit study was made possible by the support of
+          Governor Kathy Hochul, Senator Tim Kennedy, and the New York State
+          Department of Transportation.
+        </p>
+        <h2>Goals</h2>
+        <div class="flex flex-wrap -mx-2 mb-8">
+          <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
+            <div class="bg-white p-4 rounded-lg shadow text-center">
+              <i class="fas fa-chart-line fa-2x text-blue-500 mb-2"></i>
+              <p class="text-gray-600">Improve efficiency and effectiveness</p>
             </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
+            <div class="bg-white p-4 rounded-lg shadow text-center">
+              <i class="fas fa-user-friends fa-2x text-blue-500 mb-2"></i>
+              <p class="text-gray-600">
+                Identify new and expanded service delivery opportunities
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
+            <div class="bg-white p-4 rounded-lg shadow text-center">
+              <i class="fas fa-map-marked-alt fa-2x text-blue-500 mb-2"></i>
+              <p class="text-gray-600">Evaluate service area expansion</p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
+            <div class="bg-white p-4 rounded-lg shadow text-center">
+              <i class="fas fa-handshake fa-2x text-blue-500 mb-2"></i>
+              <p class="text-gray-600">
+                Ensure compliance with the Americans with Disabilities Act (ADA)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="mb-12">
+          <h2>Upcoming Meetings</h2>
+          <div class="bg-white p-6 rounded-lg shadow mb-4">
+            <h3>Virtual Meeting (Zoom)</h3>
+            <p class="text-gray-600 mb-1">December 1, 2022</p>
+            <p class="text-gray-600 mb-1">Meeting ID: 123 456 7890</p>
+            <p class="text-gray-600 mb-1">Passcode: 098765</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3>In-Person Meeting</h3>
+            <p class="text-gray-600 mb-1">December 15, 2022</p>
+            <p class="text-gray-600 mb-1">Buffalo Central Library</p>
+            <p class="text-gray-600 mb-1">
+              1 Lafayette Square, Buffalo, NY 14203
+            </p>
+          </div>
+          <p class="text-gray-600 mt-4">
+            Sign language interpretation will be provided at both meetings. PAL
+            transportation is available to registered clients. For more
+            information about transportation or other accommodations, call Tom
+            Smith at 555-1234 or email at tom.smith@nfta.com.
+          </p>
         </section>
 
-        <section class="container mx-auto px-6 py-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">NFTA-Metro is undertaking a study to comprehensively evaluate its Paratransit Access Line (PAL) service.</h2>
-            <p class="text-gray-600 mb-4">The study will identify opportunities to improve service, customer experience, and outcomes by the way the service is delivered, the availability of paratransit service, and the customer experience with core operations.</p>
-            <p class="text-gray-600 mb-4">To inform this effort, NFTA-Metro is reaching out to PAL customers and stakeholders within the service area and those with a stake in and insights about PAL service and usage outcomes.</p>
-            <p class="text-gray-600 mb-4">The NFTA-Metro Paratransit study was made possible by the support of Governor Kathy Hochul, Senator Tim Kennedy, and the New York State Department of Transportation.</p>
-            <h3 class="text-xl font-bold text-gray-800 mb-4">GOALS</h3>
-            <div class="flex flex-wrap -mx-2 mb-8">
-                <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
-                    <div class="bg-white p-4 rounded-lg shadow text-center">
-                        <i class="fas fa-chart-line fa-2x text-blue-500 mb-2"></i>
-                        <p class="text-gray-600">Improve efficiency and effectiveness</p>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
-                    <div class="bg-white p-4 rounded-lg shadow text-center">
-                        <i class="fas fa-user-friends fa-2x text-blue-500 mb-2"></i>
-                        <p class="text-gray-600">Identify new and expanded service delivery opportunities</p>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
-                    <div class="bg-white p-4 rounded-lg shadow text-center">
-                        <i class="fas fa-map-marked-alt fa-2x text-blue-500 mb-2"></i>
-                        <p class="text-gray-600">Evaluate service area expansion</p>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
-                    <div class="bg-white p-4 rounded-lg shadow text-center">
-                        <i class="fas fa-handshake fa-2x text-blue-500 mb-2"></i>
-                        <p class="text-gray-600">Ensure compliance with the Americans with Disabilities Act (ADA)</p>
-                    </div>
-                </div>
+        <section class="mb-12">
+          <h2>Timeframe</h2>
+          <div class="flex flex-wrap -mx-2">
+            <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt="Phase 1 icon representing evaluation, research, and recommended improvements"
+                  class="mb-2"
+                />
+                <h3>Phase 1</h3>
+                <p class="text-gray-600">
+                  Evaluation, research, and recommended improvements
+                </p>
+              </div>
             </div>
-
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">UPCOMING MEETINGS</h3>
-                <div class="bg-white p-6 rounded-lg shadow mb-4">
-                    <h4 class="text-lg font-bold text-gray-800 mb-2">Virtual Meeting (Zoom)</h4>
-                    <p class="text-gray-600 mb-1">December 1, 2022</p>
-                    <p class="text-gray-600 mb-1">Meeting ID: 123 456 7890</p>
-                    <p class="text-gray-600 mb-1">Passcode: 098765</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="text-lg font-bold text-gray-800 mb-2">In-Person Meeting</h4>
-                    <p class="text-gray-600 mb-1">December 15, 2022</p>
-                    <p class="text-gray-600 mb-1">Buffalo Central Library</p>
-                    <p class="text-gray-600 mb-1">1 Lafayette Square, Buffalo, NY 14203</p>
-                </div>
-                <p class="text-gray-600 mt-4">Sign language interpretation will be provided at both meetings. PAL transportation is available to registered clients. For more information about transportation or other accommodations, call Tom Smith at 555-1234 or email at tom.smith@nfta.com.</p>
-            </section>
-
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">TIMEFRAME</h3>
-                <div class="flex flex-wrap -mx-2">
-                    <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <img src="https://placehold.co/100x100" alt="Phase 1 icon representing evaluation, research, and recommended improvements" class="mb-2">
-                            <h5 class="text-lg font-bold text-gray-800 mb-1">PHASE 1</h5>
-                            <p class="text-gray-600">Evaluation, research, and recommended improvements</p>
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <img src="https://placehold.co/100x100" alt="Phase 2 icon representing estimation of future demand, cost, and including expanded service area" class="mb-2">
-                            <h5 class="text-lg font-bold text-gray-800 mb-1">PHASE 2</h5>
-                            <p class="text-gray-600">Estimation of future demand, cost, and including expanded service area</p>
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <img src="https://placehold.co/100x100" alt="Phase 3 icon representing implementation plan" class="mb-2">
-                            <h5 class="text-lg font-bold text-gray-800 mb-1">PHASE 3</h5>
-                            <p class="text-gray-600">Implementation plan</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">STAKEHOLDER COMMITTEE</h3>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p class="text-gray-600 mb-2">NFTA-Metro has engaged a Stakeholder Committee to provide feedback and insight throughout the course of the study. Committee members include (but are not limited to) representatives from:</p>
-                    <ul class="list-disc pl-5 text-gray-600">
-                        <li>Community Services for Every1</li>
-                        <li>Deaf Access Services</li>
-                        <li>Erie County</li>
-                        <li>Independent Living of Niagara County</li>
-                        <li>Hearts and Hands</li>
-                        <li>Niagara Frontier Development of the Visually Impaired</li>
-                        <li>People Inc.</li>
-                        <li>Progressive County Office of Aging</li>
-                        <li>WNYIL</li>
-                        <li>Western New York Independent Living</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">PROJECT DOCUMENTS</h3>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <ul class="list-none space-y-2">
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">May 2022 Kick-Off Meeting</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">Stakeholder Committee Meeting Presentation Slides</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">Stakeholder Committee Meeting Notes</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">August 2022 Meeting</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">NFTA-Metro Paratransit Study - Draft Communications & Participation Plan</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">Stakeholder Committee Meeting - Presentation Slides</a></li>
-                        <li><a href="#" class="text-blue-500 hover:text-blue-700">Stakeholder Committee Meeting - Meeting Summary</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">CONTACT US</h3>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <form action="#" method="POST">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your name (required)</label>
-                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your email (required)</label>
-                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                        </div>
-                        <div class="mb-4">
-                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
-                        </div>
-                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">SEND</button>
-                    </form>
-                </div>
-            </section>
+            <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt="Phase 2 icon representing estimation of future demand, cost, and including expanded service area"
+                  class="mb-2"
+                />
+                <h3>Phase 2</h3>
+                <p class="text-gray-600">
+                  Estimation of future demand, cost, and including expanded
+                  service area
+                </p>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt="Phase 3 icon representing implementation plan"
+                  class="mb-2"
+                />
+                <h3>Phase 3</h3>
+                <p class="text-gray-600">Implementation plan</p>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">
+            Stakeholder Committee
+          </h2>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600 mb-2">
+              NFTA-Metro has engaged a Stakeholder Committee to provide feedback
+              and insight throughout the course of the study. Committee members
+              include (but are not limited to) representatives from:
+            </p>
+            <ul class="list-disc pl-5 text-gray-600">
+              <li>Community Services for Every1</li>
+              <li>Deaf Access Services</li>
+              <li>Erie County</li>
+              <li>Independent Living of Niagara County</li>
+              <li>Hearts and Hands</li>
+              <li>Niagara Frontier Development of the Visually Impaired</li>
+              <li>People Inc.</li>
+              <li>Progressive County Office of Aging</li>
+              <li>WNYIL</li>
+              <li>Western New York Independent Living</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">
+            Project Documents
+          </h2>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <ul class="list-none space-y-2">
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >May 2022 Kick-Off Meeting</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >Stakeholder Committee Meeting Presentation Slides</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >Stakeholder Committee Meeting Notes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >August 2022 Meeting</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >NFTA-Metro Paratransit Study - Draft Communications &
+                  Participation Plan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >Stakeholder Committee Meeting - Presentation Slides</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  >Stakeholder Committee Meeting - Meeting Summary</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Your name (required)</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Your email (required)</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                >SEND</button
+              >
+            </form>
+          </div>
+        </section>
+      </section>
     </main>
 
     <footer class="bg-white shadow">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <p class="text-gray-600 text-sm">&copy;2023 NFTA-Metro. All rights reserved.</p>
-                <div class="flex items-center">
-                    <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <p class="text-gray-600 text-sm">
+            &copy;2023 NFTA-Metro. All rights reserved.
+          </p>
+          <div class="flex items-center">
+            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"
+              ><i class="fab fa-facebook-f"></i></a
+            >
+            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"
+              ><i class="fab fa-twitter"></i></a
+            >
+            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"
+              ><i class="fab fa-instagram"></i></a
+            >
+            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2"
+              ><i class="fab fa-linkedin-in"></i></a
+            >
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
