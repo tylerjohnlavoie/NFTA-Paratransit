@@ -5,6 +5,7 @@ import Goal from "../components/Goal.astro";
 import banner from "../assets/images/NFTA-banner-image.jpg";
 import clipboard from "../assets/images/woman-with-checklist.png";
 import logo from "../assets/images/NFTA-logo.png";
+import { Code } from "astro:components";
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -39,10 +40,9 @@ import logo from "../assets/images/NFTA-logo.png";
           />
         </a>
         <div class="flex items-center space-x-4">
-          <a href="#" class="text-gray-600 hover:text-NFTA-navy">About</a>
-          <a href="#" class="text-gray-600 hover:text-NFTA-navy">Upcoming Meetings</a>
-          <a href="#" class="text-gray-600 hover:text-NFTA-navy">Project Documents</a>
-          <a href="#" class="text-gray-600 hover:text-NFTA-navy">Contact Us</a>
+          <a href="#meetings" class="text-gray-600 hover:text-NFTA-navy">Upcoming Meetings</a>
+          <a href="#documents" class="text-gray-600 hover:text-NFTA-navy">Project Documents</a>
+          <a href="#contact" class="text-gray-600 hover:text-NFTA-navy">Contact Us</a>
         </div>
       </nav>
     </header>
@@ -69,97 +69,67 @@ import logo from "../assets/images/NFTA-logo.png";
         </div>
       </section>
 
-      <section id="description" class="h-fit py-12 md:py-16 lg:py-32 container mx-auto">
+      <section id="about" class="h-fit py-12 md:py-16 lg:py-32 container mx-auto">
         <p
-        class="font-heading font-bold text-NFTA-navy text-2xl md:text-3xl/snug lg:text-5xl/snug mb-24 lg:pr-80"
+        class="font-heading font-bold text-NFTA-navy text-2xl md:text-3xl/snug lg:text-5xl/snug mb-24 lg:w-3/4"
       >
         NFTA-Metro is undertaking a study to comprehensively evaluate its
         Paratransit Access Line (PAL) service.
       </p>
           <div class="flex flex-col lg:flex-row gap-16">
-            <div class="flex-col flex gap-4 h-fit w-fill lg:w-3/5">
+            <div class="flex-col flex gap-4 h-fit w-fill lg:w-1/2">
      
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-2xl/relaxed mb-4">
-                The study will identify opportunities to improve service, customer
-                experience, and outcomes by the way the service is delivered, the
-                availability of paratransit service, and the customer experience
-                with core operations.
+              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+                The study will identify opportunities to
+                improve quality, increase efficiency,
+                and enhance the customer experience.
+                In addition, the study will evaluate the
+                costs and feasibility of potential service
+                area expansion.
               </p>
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-2xl/relaxed mb-4">
-                  To inform this effort, NFTA-Metro is
-                reaching out to PAL customers and stakeholders within the service
-                area and those with a stake in and insights about PAL service and
-                usage outcomes.
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-2xl/relaxed mb-4">
-                  The NFTA-Metro Paratransit study was made
-                possible by the support of Governor Kathy Hochul, Senator Tim
-                Kennedy, and the New York State Department of Transportation.
+              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+                To inform this effort, <strong>NFTA-Metro</strong> is
+                seeking input from those who use PAL
+                service and others on paratransit
+                needs, issues, and opportunities within
+                Erie and Niagara counties.
+              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+                The NFTA-Metro Paratransit study was made possible by the support of Governor Kathy Hochul, Senator Tim Kennedy, and the western New York State delegation.
               </p>
             </div>
             <Image
               src={clipboard}
               alt="A woman looking at a survey on a clipboard"
-              class="object-contain px-16 lg:w-2/5 h-auto"
+              class="object-contain object-left pl-16 lg:w-1/2 lg:h-128"
             />
           </div>
         </section>
 
-        <section id="goals" class="py-12 md:py-16 lg:py-32 bg-gray-50">
-        <div class="container mx-auto">
-          <h2>Goals</h2>
-          <div class="flex flex-wrap lg:flex-nowrap lg:flex-row gap-4">
-            <div class="w-full md:w-1/2 lg:w-1/4">
-              <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
-                <i class="fas fa-chart-line fa-2x text-NFTA-navy mb-2"></i>
-                <p class="text-gray-600">Improve efficiency and effectiveness</p>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4">
-              <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
-                <i class="fas fa-user-friends fa-2x text-NFTA-navy mb-2"></i>
-                <p class="text-gray-600">
-                  Identify new and expanded service delivery opportunities
-                </p>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4">
-              <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
-                <i class="fas fa-map-marked-alt fa-2x text-NFTA-navy mb-2"></i>
-                <p class="text-gray-600">Evaluate service area expansion</p>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4">
-              <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
-                <i class="fas fa-handshake fa-2x text-NFTA-navy mb-2"></i>
-                <p class="text-gray-600">
-                  Ensure compliance with the Americans with Disabilities Act (ADA)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
+        
 
-        <section id="meetings" class="py-12 md:py-16 lg:py-32 bg-white">
+        <section id="meetings" class="py-12 md:py-16 lg:py-32 bg-gray-50">
           <div class="container mx-auto">
             <h2>Upcoming Meetings</h2>
+            <p class="text-NFTA-navy text-xl font-heading mb-8">
+              Please join us at a public meeting to discuss paratransit service in our region.
+            </p>
            <div class="flex flex-col md:flex-row gap-8">
-              <div class="border border-gray-200 md:w-1/3 lg:h-80 bg-white p-6 justify-between rounded-lg shadow">
+              <div class="border border-gray-300 md:w-1/3 lg:h-80 bg-white p-6 justify-between rounded-lg">
                 <h3>Virtual Meeting (Zoom)</h3>
                 <div>
-                  <p class="text-gray-600 mb-1">December 1, 2022</p>
+                  <p class="text-gray-600 mb-1">December 13, 2023</p>
                   <p class="text-gray-600 mb-1">Meeting ID: 123 456 7890</p>
                   <p class="text-gray-600 mb-1">Passcode: 098765</p>
                 </div>
               </div>
-              <div class="border border-gray-200 md:w-2/3 lg:h-80 bg-white overflow-clip rounded-lg shadow flex flex-col lg:flex-row">
+              <div class="border border-gray-300 md:w-2/3 lg:h-80 bg-white overflow-clip rounded-lg flex flex-col lg:flex-row">
                <div class="p-6 h-2/2 lg:h-full lg:w-2/5">
                   <h3>In-Person Meeting</h3>
                   <div>
-                    <p class="text-gray-600 mb-1">December 15, 2022</p>
-                    <p class="text-gray-600 mb-1">Buffalo Central Library</p>
+                    <p class="text-gray-600 mb-1">December 14, 2023</p>
+                    <p class="text-gray-600 mb-1">Buffalo Central Library Auditorium</p>
                     <p class="text-gray-600 mb-1">
-                      1 Lafayette Square, Buffalo, NY 14203
+                      1 Lafayette Square, Buffalo <br />NY 14203
                     </p>
               </div>
                </div>
@@ -168,14 +138,47 @@ import logo from "../assets/images/NFTA-logo.png";
               </div>
               </div>
            </div>
-            <p class="text-gray-600 mt-4">
-              Sign language interpretation will be provided at both meetings. PAL
-              transportation is available to registered clients. For more
-              information about transportation or other accommodations, call Tom
-              Smith at 555-1234 or email at tom.smith@nfta.com.
+            <p class="text-gray-600 mt-8 w-2/3">
+              Sign language interpretation will be provided at both meetings. PAL transportation is available to registered riders. Should you need assistance with registration or other accommodation, call Sam Gallivan at NFTA-Metro (716-855-7224) or via email at paratransitstudy@nfta.com.
             </p>
           </div>
         </section>
+
+        <section id="goals" class="py-12 md:py-16 lg:py-32 bg-white">
+          <div class="container mx-auto">
+            <h2>Goals</h2>
+            <div class="flex flex-wrap lg:flex-nowrap lg:flex-row gap-4">
+              <div class="w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
+                  <i class="fas fa-chart-line fa-2x text-NFTA-navy mb-2"></i>
+                  <p class="text-gray-600">Improve efficiency and effectiveness</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
+                  <i class="fas fa-user-friends fa-2x text-NFTA-navy mb-2"></i>
+                  <p class="text-gray-600">
+                    Identify new and expanded service delivery opportunities
+                  </p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
+                  <i class="fas fa-map-marked-alt fa-2x text-NFTA-navy mb-2"></i>
+                  <p class="text-gray-600">Evaluate service area expansion</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300">
+                  <i class="fas fa-handshake fa-2x text-NFTA-navy mb-2"></i>
+                  <p class="text-gray-600">
+                    Ensure compliance with the Americans with Disabilities Act (ADA)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
 
         <section class="py-12 md:py-16 lg:py-32 bg-white">
           <div class="container mx-auto">
@@ -223,78 +226,83 @@ import logo from "../assets/images/NFTA-logo.png";
           </div>
         </section>
 
-        <section class="mb-12">
-          <h2 class="text-xl font-bold text-gray-800 mb-4">
-            Stakeholder Committee
-          </h2>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <p class="text-gray-600 mb-2">
-              NFTA-Metro has engaged a Stakeholder Committee to provide feedback
-              and insight throughout the course of the study. Committee members
-              include (but are not limited to) representatives from:
-            </p>
-            <ul class="list-disc pl-5 text-gray-600">
-              <li>Community Services for Every1</li>
-              <li>Deaf Access Services</li>
-              <li>Erie County</li>
-              <li>Independent Living of Niagara County</li>
-              <li>Hearts and Hands</li>
-              <li>Niagara Frontier Development of the Visually Impaired</li>
-              <li>People Inc.</li>
-              <li>Progressive County Office of Aging</li>
-              <li>WNYIL</li>
-              <li>Western New York Independent Living</li>
-            </ul>
+        <section id="stakeholders" class="py-12 md:py-16 lg:py-32 bg-white">
+          <div class="container mx-auto">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">
+              Stakeholder Committee
+            </h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <p class="text-gray-600 mb-2">
+                NFTA-Metro has engaged a Stakeholder Committee to provide feedback
+                and insight throughout the course of the study. Committee members
+                include (but are not limited to) representatives from:
+              </p>
+              <ul class="list-disc pl-5 text-gray-600">
+                <li>Community Services for Every1</li>
+                <li>Deaf Access Services</li>
+                <li>Erie County</li>
+                <li>Independent Living of Niagara County</li>
+                <li>Hearts and Hands</li>
+                <li>Niagara Frontier Development of the Visually Impaired</li>
+                <li>People Inc.</li>
+                <li>Progressive County Office of Aging</li>
+                <li>WNYIL</li>
+                <li>Western New York Independent Living</li>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section class="mb-12">
-          <h2 class="text-xl font-bold text-gray-800 mb-4">
-            Project Documents
-          </h2>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <ul class="list-none space-y-2">
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >May 2022 Kick-Off Meeting</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >Stakeholder Committee Meeting Presentation Slides</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >Stakeholder Committee Meeting Notes</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >August 2022 Meeting</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >NFTA-Metro Paratransit Study - Draft Communications &
-                  Participation Plan</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >Stakeholder Committee Meeting - Presentation Slides</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  >Stakeholder Committee Meeting - Meeting Summary</a
-                >
-              </li>
-            </ul>
+        <section id="documents" class="py-12 md:py-16 lg:py-32 bg-white">
+          <div class="container mx-auto">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">
+              Project Documents
+            </h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <ul class="list-none space-y-2">
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >May 2022 Kick-Off Meeting</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >Stakeholder Committee Meeting Presentation Slides</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >Stakeholder Committee Meeting Notes</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >August 2022 Meeting</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >NFTA-Metro Paratransit Study - Draft Communications &
+                    Participation Plan</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >Stakeholder Committee Meeting - Presentation Slides</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    >Stakeholder Committee Meeting - Meeting Summary</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section class="mb-12">
+        <section id="contact" class="py-12 md:py-16 lg:py-32 bg-white">
+          <div class="container mx-auto">
           <h2 class="text-xl font-bold text-gray-800 mb-4">Contact Us</h2>
           <div class="bg-white p-6 rounded-lg shadow">
             <form action="#" method="POST">
@@ -346,7 +354,7 @@ import logo from "../assets/images/NFTA-logo.png";
               >
             </form>
           </div>
-        </section>
+        </div>
       </section>
     </main>
 
