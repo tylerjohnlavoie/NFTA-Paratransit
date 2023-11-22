@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  svg: string;
+  text: string;
+}
+
+const {
+  svg,
+  title = "Efficiency",
+  text = "Improve efficiency and effectiveness",
+} = Astro.props;
+---
+
+<div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
+  <div class="bg-white p-4 rounded-lg shadow text-left">
+    <span class="fas fa-chart-line fa-2x text-blue-500 mb-2">{svg}</span>
+    <p class="text-gray-600">{title}</p>
+    <p class="text-gray-600">{text}</p>
+  </div>
+</div>

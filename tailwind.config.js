@@ -7,8 +7,8 @@ module.exports = {
         DEFAULT: '2rem',
         sm: '3rem',
         md: '4rem',
-        lg: '4rem',
-        xl: '5rem',
+        lg: '5rem',
+        xl: '6rem',
       },
     },
     extend: {
@@ -20,6 +20,11 @@ module.exports = {
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],
         body: ['Inter', 'sans-serif']
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+        '256': '48rem'
       }
     },
   },
