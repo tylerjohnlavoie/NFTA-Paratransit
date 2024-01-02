@@ -3,7 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
-      padding: 'calc(1rem + 8vw)',
+      padding: {
+        DEFAULT: 'calc(1rem + 5vw)',
+        md: 'calc(1.25rem + 10vw)',
+      },
       center: true,
     },
     extend: {

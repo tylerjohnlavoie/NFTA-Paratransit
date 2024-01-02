@@ -14,7 +14,7 @@
   }
 
   p {
-    @apply font-body text-xs-fluid text-gray-600 mb-[var(--space-s)];
+    @apply font-body text-xs-fluid text-gray-600;
     max-inline-size: 38ch;
     line-height: 1.5em;
   }
@@ -37,10 +37,10 @@
   }
 
   #index-blurb {
-    @apply font-heading text-xl-fluid font-bold text-NFTA-navy mb-[var(--space-xl)];
-    line-height: 1.25em;
+    @apply font-heading text-l-fluid font-semibold text-NFTA-navy mb-[var(--space-xl)];
+    line-height: 1.3755em;
     max-inline-size: 25ch;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
   }
 
   /* Fluid spacing system */
