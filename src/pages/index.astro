@@ -29,25 +29,25 @@ import { Code } from "astro:components";
       rel="stylesheet"
     />
   </head>
-  <body class="bg-white">
-    <header class="bg-white shadow">
-      <nav class="container mx-auto h-fit py-8 flex justify-between items-center">
+  <body class="bg-white w-screen">
+    <header class="bg-white shadow w-screen overflow-clip">
+      <nav class="container h-fit py-[var(--space-m)] flex justify-between items-center">
         <a href="https://metro.nfta.com/" target="_blank" rel="noopener noreferrer" class="text-xl font-bold text-gray-800">
           <Image 
           src={logo}
           alt="Niagara Frontier Transportation Authority logo"
-          class="h-8 w-auto"
+          class="h-[var(--space-m)] w-auto"
           />
         </a>
         <div class="flex items-center space-x-4">
-          <a href="#meetings" class="text-gray-600 hover:text-NFTA-navy">Upcoming Meetings</a>
-          <a href="#documents" class="text-gray-600 hover:text-NFTA-navy">Project Documents</a>
+          <a href="#meetings" class="text-gray-600 hover:text-NFTA-navy">Meetings</a>
+          <a href="#documents" class="text-gray-600 hover:text-NFTA-navy">Documents</a>
           <a href="#contact" class="text-gray-600 hover:text-NFTA-navy">Contact Us</a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="flex flex-col h-fit w-screen overflow-clip">
       <section
         class="bg-NFTA-navy h-72 md:h-80 lg:h-144 grid grid-cols-1 grid-rows-1 overflow-clip"
         id="banner"
@@ -61,25 +61,24 @@ import { Code } from "astro:components";
           class="z-10 container col-start-1 col-span-1 row-start-1 row-span-1 flex-col flex items-left justify-center mx-auto gap-4 md:gap-6 lg:gap-12 text-white"
         >
           <h1>NFTA-Metro <br /> Paratransit Study</h1>
-          <a
+          <!-- <a
             class="bg-NFTA-navy hover:bg-white hover:text-NFTA-navy hover:-translate-y-1 hover:scale-101 transition-all w-fit font-heading py-2 px-4 lg:py-4 lg:px-6 rounded-full text-sm md:text-lg lg:text-2xl font-medium"
             href="#meetings"
           >Upcoming Meetings
-          </a>
+          </a> -->
         </div>
       </section>
 
-      <section id="about" class="h-fit py-12 md:py-16 lg:py-32 container mx-auto">
-        <p
-        class="font-heading font-bold text-NFTA-navy text-2xl md:text-3xl/snug lg:text-5xl/snug mb-24 lg:w-3/4"
+      <section id="about" class="h-fit py-12 md:py-16 lg:py-32  container">
+      <p
+        id="index-blurb"
       >
         NFTA-Metro is undertaking a study to comprehensively evaluate its
         Paratransit Access Line (PAL) service.
       </p>
           <div class="flex flex-col lg:flex-row gap-16">
             <div class="flex-col flex gap-4 h-fit w-fill lg:w-1/2">
-     
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+              <p>
                 The study will identify opportunities to
                 improve quality, increase efficiency,
                 and enhance the customer experience.
@@ -87,13 +86,13 @@ import { Code } from "astro:components";
                 costs and feasibility of potential service
                 area expansion.
               </p>
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+              <p>
                 To inform this effort, <strong>NFTA-Metro</strong> is
                 seeking input from those who use PAL
                 service and others on paratransit
                 needs, issues, and opportunities within
                 Erie and Niagara counties.
-              <p class="text-gray-700 md:text-lg/relaxed lg:text-xl/relaxed mb-4">
+              <p>
                 The NFTA-Metro Paratransit study was made possible by the support of Governor Kathy Hochul, Senator Tim Kennedy, and the western New York State delegation.
               </p>
             </div>
