@@ -136,10 +136,12 @@ import clipboard from "../assets/images/woman-with-checklist.png";
   <section id="goals" class="w-screen py-12 md:py-16 lg:py-32 bg-white">
     <div class="container mx-auto">
       <h2>Goals</h2>
-      <div class="flex flex-wrap lg:flex-nowrap lg:flex-row gap-[var(--space-xs)] w-full">
+      <div
+        class="flex flex-wrap lg:flex-nowrap md:flex-row gap-[var(--space-xs)] w-full"
+      >
         <div class="w-full md:basis-1/2 lg:basis-1/4">
           <div
-            class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300"
+            class="bg-white h-[var(--space-6xl)] p-6 rounded-lg border border-gray-300"
           >
             <i class="fas fa-chart-line fa-2x text-NFTA-navy mb-2"></i>
             <p class="text-gray-600">Improve efficiency and effectiveness</p>
@@ -147,7 +149,7 @@ import clipboard from "../assets/images/woman-with-checklist.png";
         </div>
         <div class="w-full md:basis-1/2 lg:basis-1/4">
           <div
-            class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300"
+            class="bg-white h-[var(--space-6xl)] p-6 rounded-lg border border-gray-300"
           >
             <i class="fas fa-user-friends fa-2x text-NFTA-navy mb-2"></i>
             <p class="text-gray-600">
@@ -157,7 +159,7 @@ import clipboard from "../assets/images/woman-with-checklist.png";
         </div>
         <div class="w-full md:basis-1/2 lg:basis-1/4">
           <div
-            class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300"
+            class="bg-white h-[var(--space-6xl)] p-6 rounded-lg border border-gray-300"
           >
             <i class="fas fa-map-marked-alt fa-2x text-NFTA-navy mb-2"></i>
             <p class="text-gray-600">Evaluate service area expansion</p>
@@ -165,7 +167,7 @@ import clipboard from "../assets/images/woman-with-checklist.png";
         </div>
         <div class="w-full md:basis-1/2 lg:basis-1/4">
           <div
-            class="bg-white md:h-48 lg:h-40 p-6 rounded-lg border border-gray-300"
+            class="bg-white h-[var(--space-6xl)] p-6 rounded-lg border border-gray-300"
           >
             <i class="fas fa-handshake fa-2x text-NFTA-navy mb-2"></i>
             <p class="text-gray-600">
@@ -173,6 +175,84 @@ import clipboard from "../assets/images/woman-with-checklist.png";
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Timeframe</h2>
+      <!-- Item #1 -->
+      <div class="relative pl-8 sm:pl-32 group">
+        <!-- Purple label -->
+        <h3
+          class="font-caveat font-medium text-s-fluid text-NFTA-navy mb-1 sm:mb-0"
+        >
+          The origin
+        </h3>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div
+          class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-NFTA-navy after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+        >
+          <div class="text-xl font-bold text-slate-900">
+            Acme was founded in Milan, Italy
+          </div>
+        </div>
+        <!-- Content -->
+        <p>
+          Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+          Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus
+          risus.
+        </p>
+      </div>
+
+      <!-- Item #2 -->
+      <div class="relative pl-8 sm:pl-32 py-6 group">
+        <!-- Purple label -->
+        <h3
+          class="font-caveat font-medium text-s-fluid text-NFTA-navy mb-1 sm:mb-0"
+        >
+          The milestone
+        </h3>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div
+          class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-NFTA-navy after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+        >
+          <div class="text-xl font-bold text-slate-900">
+            Reached 5K customers
+          </div>
+        </div>
+        <!-- Content -->
+        <p>
+          Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+          Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus
+          risus.
+        </p>
+      </div>
+
+      <!-- Item #3 -->
+      <div class="relative pl-8 sm:pl-32 py-6 group">
+        <!-- Purple label -->
+        <h3
+          class="font-caveat font-medium text-s-fluid text-NFTA-navy mb-1 sm:mb-0"
+        >
+          The acquisitions
+        </h3>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div
+          class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-NFTA-navy after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+        >
+
+          <div class="text-xl font-bold text-slate-900">
+            Acquired various companies, inluding Technology Inc.
+          </div>
+        </div>
+        <!-- Content -->
+        <p>
+          Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+          Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus
+          risus.
+        </p>
       </div>
     </div>
   </section>
@@ -313,7 +393,13 @@ import clipboard from "../assets/images/woman-with-checklist.png";
     <div class="container mx-auto">
       <h2 class="text-xl font-bold text-gray-800 mb-4">Contact Us</h2>
       <div class="bg-white p-6 rounded-lg shadow">
-        <form action="https://usebasin.com/f/a95a0d1def96" name="contact" method="POST">
+        <form
+          name="contact"
+          action="https://usebasin.com/f/a95a0d1def96"
+          method="POST"
+          enctype="multipart/form-data"
+          id="form"
+        >
           <div class="mb-4">
             <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
               >Your name (required)</label
@@ -352,11 +438,10 @@ import clipboard from "../assets/images/woman-with-checklist.png";
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             ></textarea>
           </div>
-          <button
+          <input
             type="submit"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >SEND</button
-          >
+          />
         </form>
       </div>
     </div>
