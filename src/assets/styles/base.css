@@ -1,30 +1,99 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
+  /* typography */
 
-    h1, h2, h3, h4, h5 {
-        @apply font-heading;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-heading;
+  }
 
-    p {
-        @apply font-body;
-    }
+  p {
+    @apply font-body text-xs-fluid text-gray-600;
+    max-inline-size: 38ch;
+    line-height: 1.5em;
+  }
 
-    h1 {
-        @apply text-3xl md:text-5xl lg:text-8xl;
-        @apply font-bold;
-    }
+  h1 {
+    font-size: var(--space-xl-2xl);
+    line-height: 1.125em;
+    max-inline-size: 30ch;
+    @apply font-bold;
+  }
 
-    h2 {
-        @apply text-2xl md:text-3xl lg:text-4xl;
-        @apply mb-8;
-        @apply font-semibold;
-    }
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply mb-8;
+    @apply font-semibold;
+  }
 
-    h3 {
-        @apply text-xl md:text-2xl
-    }
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
 
+  #index-blurb {
+    @apply font-heading text-l-fluid font-semibold text-NFTA-navy mb-[var(--space-xl)];
+    line-height: 1.3755em;
+    max-inline-size: 25ch;
+    letter-spacing: -0.025em;
+  }
+
+  /* Fluid spacing system */
+
+  :root {
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+    --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+    --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+    --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+    --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+    --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+    --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+    --space-4xl: clamp(9rem, 8.6522rem + 1.7391vw, 10rem);
+    --space-5xl: clamp(11.25rem, 10.8152rem + 2.1739vw, 12.5rem);
+    --space-6xl: clamp(13.5rem, 12.9783rem + 2.6087vw, 15rem);
+    --space-7xl: clamp(18rem, 17.3043rem + 3.4783vw, 20rem);
+    --space-8xl: clamp(27rem, 25.9565rem + 5.2174vw, 30rem);
+    --space-9xl: clamp(36rem, 34.6087rem + 6.9565vw, 40rem);
+  
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem);
+    --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem);
+    --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+    --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem);
+    --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem);
+    --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem);
+    --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
+    --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
+    --space-3xl-4xl: clamp(6.75rem, 5.6196rem + 5.6522vw, 10rem);
+    --space-4xl-5xl: clamp(9rem, 7.7826rem + 6.087vw, 12.5rem);
+    --space-5xl-6xl: clamp(11.25rem, 9.9457rem + 6.5217vw, 15rem);
+    --space-6xl-7xl: clamp(13.5rem, 11.2391rem + 11.3043vw, 20rem);
+    --space-7xl-8xl: clamp(18rem, 13.8261rem + 20.8696vw, 30rem);
+    --space-8xl-9xl: clamp(27rem, 22.4783rem + 22.6087vw, 40rem);
+  
+    /* Custom pairs */
+    --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+
+    /* Fluid type */
+
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+    --step-3: clamp(1.9438rem, 1.7707rem + 0.8652vw, 2.4413rem);
+    --step-4: clamp(2.3325rem, 2.0823rem + 1.2511vw, 3.0519rem);
+    --step-5: clamp(2.7994rem, 2.4461rem + 1.7663vw, 3.815rem);
+    --step-6: clamp(3.3594rem, 2.8694rem + 2.45vw, 4.7681rem);
+    --step-7: clamp(4.0313rem, 3.3602rem + 3.3554vw, 5.9606rem);
+    --step-8: clamp(4.8375rem, 3.9286rem + 4.5446vw, 7.4506rem);
+    --step-9: clamp(5.805rem, 4.5848rem + 6.1011vw, 9.3131rem);
+  }
 }
