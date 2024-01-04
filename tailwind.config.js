@@ -5,7 +5,7 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: 'calc(1rem + 5vw)',
-        md: 'calc(1.25rem + 10vw)',
+        md: 'calc(1.25rem + 5vw)',
       },
       center: true,
     },

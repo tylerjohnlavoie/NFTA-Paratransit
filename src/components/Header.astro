@@ -1,0 +1,21 @@
+---
+import logo from "../assets/images/NFTA-logo.png";
+import { Image } from "astro:assets";
+---
+
+<header class="bg-white shadow w-screen overflow-clip">
+    <nav class="container h-fit py-[var(--space-m)] flex justify-between items-center">
+      <a href="https://metro.nfta.com/" target="_blank" rel="noopener noreferrer" class="text-xl font-bold text-gray-800">
+        <Image 
+        src={logo}
+        alt="Niagara Frontier Transportation Authority logo"
+        class="h-[var(--space-m)] w-auto"
+        />
+      </a>
+      <div class="flex items-center space-x-4">
+        <a href="#meetings" class="text-gray-600 hover:text-NFTA-navy">Meetings</a>
+        <a href="#documents" class="text-gray-600 hover:text-NFTA-navy">Documents</a>
+        <a href="#contact" class="text-gray-600 hover:text-NFTA-navy">Contact Us</a>
+      </div>
+    </nav>
+  </header>
